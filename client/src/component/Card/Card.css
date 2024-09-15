@@ -1,0 +1,27 @@
+.card-container{
+    width: 250px;
+    margin: 15px 30px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius:15px;
+    flex-wrap: wrap;
+    box-shadow: gray 3px 3px 5px;
+}
+
+.card-img{
+    height: 100px;
+}
+
+.cardDescription{
+    font-size: 16px;
+}
+
+@media screen and (max-width:500px){
+    .card-container{
+        padding: 10px;
+        margin: 15px;
+    }
+}

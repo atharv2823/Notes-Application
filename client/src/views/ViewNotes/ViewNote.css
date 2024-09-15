@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.view-note-container{
+    background-color:#FFF8E8;
+    width: 600px;
+    margin: 20px auto;
+    padding:0 10px ;   
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.description-container{
+    margin:5px 20px;
+}
+
+.notes-description{
+    padding:5px 10px;
+}
+.notes-category{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding:2px 10px;
+    border-radius: 10px;
+}
+
+.delete-btn{
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    cursor: pointer;
+}
+
+
+@keyframes delete-Img{
+    0%{
+        transform: rotate(-25deg);
+    }
+
+    25%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(25deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(-25deg);
+    }
+}
+
+.delete-btn:hover{
+    animation: delete-Img;
+    animation-duration: 0.5s;
+    animation-iteration-count:infinite ;
+}
+
+.bg-shopping{
+    background-color:#ccccff ;
+}
+.bg-learning{
+    background-color:#66ccff ;
+}
+.bg-health{
+    background-color:#66ff99 ;
+}
+.bg-personal{
+    background-color:#ffcc66 ;
+}
+.bg-work{
+    background-color:#cccc00 ;
+}
+.bg-others{
+    background-color:#3399ff ;
+}
+
+@media screen and (max-width:500px) {
+    .view-note-container{
+        width: 85%;
+    }
+}

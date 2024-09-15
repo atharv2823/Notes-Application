@@ -1,0 +1,53 @@
+.note-body{
+    position: relative;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box{
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+.add-btn{
+    font-size: 20px;
+    display: block;
+    margin: 15px auto;
+    background-color: #674636;
+    color: white;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.home-btn{
+    height: 50px;
+    position: absolute;
+    top: 10px;;
+    left: 10px;
+}
+
+@media screen and (max-width:500px) {
+    .home-btn{
+        top: 90vh;
+        left: 80vw;
+    }
+
+    .input-box{
+        width: 280px;
+    }
+
+    .emoji-picker{
+        padding:0 10px;
+    }
+}
