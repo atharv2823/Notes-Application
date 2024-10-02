@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./AddNote.css";
 import EmojiPicker from "emoji-picker-react"
 import {Link} from "react-router-dom"
+import toast ,{Toaster}from "react-hot-toast"
+
 
 
 
@@ -20,6 +22,10 @@ function AddNote() {
     savedNote.push(noteObject)
 
     localStorage.setItem("note" , JSON.stringify(savedNote))
+
+    toast.success("Notes Saved succesfully")
+
+    window.location.href = "/view-note"
 
   }
 
@@ -78,6 +84,8 @@ function AddNote() {
       <img className="home-btn" src="https://cdn-icons-png.flaticon.com/128/1946/1946436.png" alt="home-button" />
       </Link>
       </div>
+
+      <Toaster/>
     </>
   );
 }
